@@ -1,0 +1,877 @@
+/* ================= GLOBAL ================= */
+
+*{
+  box-sizing:border-box;
+}
+
+
+body{
+
+  margin:0;
+
+  font-family:Arial, sans-serif;
+
+  background:#f1f5f9;
+
+}
+
+
+
+.container{
+
+  width:100%;
+
+  max-width:1200px;
+
+  margin:30px auto;
+
+}
+
+
+
+/* ================= FORM ================= */
+
+
+.form-card{
+
+  background:white;
+
+  padding:25px;
+
+  border-radius:12px;
+
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+
+.form-title{
+
+  text-align:center;
+
+  margin-bottom:25px;
+
+}
+
+
+
+.form-title h2{
+
+  color:#2563eb;
+
+  margin:0;
+
+}
+
+
+
+.form-title p{
+
+  color:#64748b;
+
+}
+
+
+
+
+
+/* ================= SECTION ================= */
+
+
+.section{
+
+  background:#f8fafc;
+
+  border:1px solid #e2e8f0;
+
+  padding:20px;
+
+  margin-bottom:20px;
+
+  border-radius:10px;
+
+}
+
+
+
+.section h3{
+
+  margin-top:0;
+
+  color:#334155;
+
+  border-bottom:2px solid #2563eb;
+
+  padding-bottom:8px;
+
+}
+
+
+
+
+
+
+/* ================= FORM GRID ================= */
+
+
+.form-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(2,1fr);
+
+  gap:20px;
+
+}
+
+
+
+
+.section label{
+
+  display:block;
+
+  font-weight:600;
+
+  margin-bottom:7px;
+
+  color:#475569;
+
+}
+
+
+
+
+
+.section input,
+.section select,
+.section textarea{
+
+
+  width:100%;
+
+  padding:11px;
+
+  border:1px solid #cbd5e1;
+
+  border-radius:8px;
+
+  font-size:15px;
+
+  outline:none;
+
+}
+
+
+
+
+.section textarea{
+
+  height:100px;
+
+  resize:none;
+
+}
+
+
+
+
+.section input:focus,
+.section select:focus,
+.section textarea:focus{
+
+  border-color:#2563eb;
+
+}
+
+
+
+
+
+
+
+
+/* ================= RADIO CHECKBOX ================= */
+
+
+.radio-group{
+
+  display:flex;
+
+  gap:25px;
+
+  flex-wrap:wrap;
+
+}
+
+
+
+.radio-group label{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  font-weight:500;
+
+}
+
+
+
+.radio-group input{
+
+  width:auto;
+
+}
+
+
+
+
+
+
+
+/* ================= IMAGE ================= */
+
+
+.section img{
+
+  margin-top:15px;
+
+  width:120px;
+
+  height:120px;
+
+  object-fit:cover;
+
+  border-radius:50%;
+
+  border:3px solid #2563eb;
+
+}
+
+
+
+
+
+
+
+
+/* ================= STATUS ================= */
+
+
+.active-status,
+.inactive-status{
+
+
+  padding:10px 25px;
+
+  border:none;
+
+  border-radius:25px;
+
+  color:white;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+}
+
+
+
+.active-status{
+
+  background:#16a34a;
+
+}
+
+
+
+.inactive-status{
+
+  background:#dc2626;
+
+}
+
+
+
+
+
+
+
+
+/* ================= SUBMIT ================= */
+
+
+/* Submit Button */
+
+.submit-btn{
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.35);
+}
+
+.submit-btn:hover{
+    background: linear-gradient(135deg, #1d4ed8, #1e40af);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.5);
+}
+
+
+/* Cancel Button */
+
+.cancel-btn{
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+    box-shadow: 0 6px 15px rgba(239, 68, 68, 0.35);
+}
+
+.cancel-btn:hover{
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(239, 68, 68, 0.5);
+}
+
+
+
+
+
+
+/* ================= TABLE ================= */
+
+
+.table-card{
+
+  background:white;
+
+  padding:20px;
+
+  margin-top:30px;
+
+  border-radius:12px;
+
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+
+table{
+
+  width:100%;
+
+  border-collapse:collapse;
+
+}
+
+
+
+th{
+
+  background:#2563eb;
+
+  color:white;
+
+  padding:12px;
+
+}
+
+
+
+td{
+
+  padding:10px;
+
+  border-bottom:1px solid #ddd;
+
+  text-align:center;
+
+}
+
+
+
+
+
+
+
+
+/* ================= BUTTONS ================= */
+
+
+.add-btn {
+    background: linear-gradient(135deg, #4f46e5, #3b82f6);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(59, 130, 246, 0.3);
+}
+
+.add-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.5);
+    background: linear-gradient(135deg, #4338ca, #2563eb);
+}
+
+.add-btn:active {
+    transform: scale(0.96);
+}
+
+
+.delete-btn{
+
+background:#dc2626;
+
+color:white;
+
+border:none;
+
+padding:8px 18px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-weight:600;
+
+}
+
+
+.delete-btn:hover{
+
+background:#991b1b;
+
+}
+.edit-btn{
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 8px;
+    box-shadow: 0 4px 10px rgba(245, 158, 11, 0.3);
+}
+
+.edit-btn:hover{
+    background: linear-gradient(135deg, #d97706, #b45309);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(245, 158, 11, 0.5);
+}
+
+.edit-btn:active{
+    transform: scale(0.95);
+}
+
+
+
+
+
+
+
+/* ================= SEARCH ================= */
+
+
+.search-box{
+
+  width:100%;
+
+  padding:10px;
+
+  border-radius:8px;
+
+  border:1px solid #ccc;
+
+  margin-bottom:15px;
+
+}
+
+
+
+
+
+
+
+
+/* ================= POPUP ================= */
+
+
+
+
+.popup-box{
+
+width:500px;
+
+max-height:85vh;
+
+overflow-y:auto;
+
+background:white;
+
+padding:25px;
+
+border-radius:15px;
+
+}
+
+
+.popup-image{
+
+width:150px;
+
+height:150px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+display:block;
+
+margin:auto;
+
+}
+
+
+
+.popup-video{
+
+width:100%;
+
+margin-top:20px;
+
+border-radius:10px;
+
+}
+
+
+
+.student-info{
+
+margin-top:20px;
+
+}
+
+
+.close-btn{
+
+margin-top:20px;
+
+padding:10px 25px;
+
+background:red;
+
+color:white;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+
+
+.student-info p{
+
+font-size:16px;
+
+padding:8px 0;
+
+border-bottom:1px solid #eee;
+
+color:#334155;
+
+}
+
+
+
+.student-info b{
+
+color:#111827;
+
+}
+
+
+
+.active-text{
+
+color:#16a34a;
+
+font-weight:bold;
+
+margin-left:5px;
+
+}
+
+
+
+.inactive-text{
+
+color:#dc2626;
+
+font-weight:bold;
+
+margin-left:5px;
+
+}
+
+
+
+.close-btn{
+
+width:100%;
+
+margin-top:20px;
+
+padding:12px;
+
+background:#dc2626;
+
+color:white;
+
+border:none;
+
+border-radius:8px;
+
+font-size:16px;
+
+cursor:pointer;
+
+font-weight:bold;
+
+}
+
+
+
+.close-btn:hover{
+
+background:#b91c1c;
+
+}
+
+
+
+@keyframes popup{
+
+from{
+
+transform:scale(.8);
+
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+
+
+
+
+
+/* ================= EXPORT ================= */
+
+
+.export-box {
+    display: flex;
+    justify-content: flex-end; /* Right side */
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+
+.excel-btn{
+
+  background:rgb(23, 24, 23);
+   color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+
+.pdf-btn{
+
+  background:rgb(23, 24, 23);
+   color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* ================= MOBILE ================= */
+
+
+@media(max-width:768px){
+
+
+.form-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.container{
+
+width:95%;
+
+}
+
+
+.radio-group{
+
+flex-direction:column;
+
+}
+
+
+}
+
+.video-overlay{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,0.75);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:9999;
+
+}
+
+
+
+.video-box{
+
+background:white;
+
+padding:20px;
+
+border-radius:15px;
+
+position:relative;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+
+}
+
+
+
+.video-box video{
+
+border-radius:10px;
+
+max-width:90vw;
+
+max-height:70vh;
+
+}
+
+
+
+
+
+.video-row{
+
+background:#f5f5f5;
+
+padding:15px;
+
+border-radius:10px;
+
+transition:0.3s;
+
+}
+
+
+
+.video-row:hover{
+
+background:#e8e8e8;
+
+transform:scale(1.02);
+
+}
+
+.input-button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.input-button input {
+  width: 250px;
+  padding: 10px;
+}
+
+.send-otp-btn,
+.verify-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.send-otp-btn {
+  background-color: #2563eb;
+}
+
+.verify-btn {
+  background-color: green;
+}
